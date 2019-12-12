@@ -91,9 +91,14 @@ class BezierView: UIView {
     
     private func drawBezierCurve(points: [CGPoint], step: CGFloat = 0.05) {
         // P = (1−t)3P1 + 3(1−t)2tP2 +3(1−t)t2P3 + t3P4 - Для 4 контрольных точек
-        guard points.count == 4 else {return}
+        guard
+            points.count == 4,
+            let context = UIGraphicsGetCurrentContext()
+            else {return}
+
         
         var t: CGFloat = 0
+        var bezierPoints: [CGPoint] = []
         
         repeat {
             //x = (1−t)2x1 + 2(1−t)tx2 + t2x3
@@ -112,14 +117,20 @@ class BezierView: UIView {
                 
             let point = CGPoint(x: x, y: y)
             drawCurvePoint(in: point)
+            bezierPoints.append(point)
             
             t += step
         } while(t <= 1.0)
         
+        let color = UIColor.blue
+        color.setFill()
+        context.setLineWidth(1)
+        context.addLines(between: bezierPoints)
+        context.strokePath()
     }
     
     private func drawCurvePoint(in point: CGPoint) {
-        let curvePointRadius: CGFloat = 5
+        let curvePointRadius: CGFloat = 3
         
         let color = UIColor.blue
         color.setFill()
