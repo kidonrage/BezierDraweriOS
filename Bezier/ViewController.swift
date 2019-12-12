@@ -13,8 +13,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let bezierView = BezierView(frame: .zero)
+        self.view.addSubview(bezierView)
     }
-
+    
+    
+    
 
 }
 

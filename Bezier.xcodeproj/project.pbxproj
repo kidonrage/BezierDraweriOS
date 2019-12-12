@@ -13,6 +13,7 @@
 		E121EA8823A133C600D8E958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E121EA8623A133C600D8E958 /* Main.storyboard */; };
 		E121EA8A23A133C900D8E958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E121EA8923A133C900D8E958 /* Assets.xcassets */; };
 		E121EA8D23A133C900D8E958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E121EA8B23A133C900D8E958 /* LaunchScreen.storyboard */; };
+		E121EA9523A1341D00D8E958 /* BezierCurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121EA9423A1341D00D8E958 /* BezierCurveView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E121EA8923A133C900D8E958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E121EA8C23A133C900D8E958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E121EA8E23A133C900D8E958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E121EA9423A1341D00D8E958 /* BezierCurveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezierCurveView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				E121EA7F23A133C600D8E958 /* Bezier */,
-				E121EA7E23A133C600D8E958 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +52,7 @@
 				E121EA7D23A133C600D8E958 /* Bezier.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		E121EA7F23A133C600D8E958 /* Bezier */ = {
@@ -59,10 +61,12 @@
 				E121EA8023A133C600D8E958 /* AppDelegate.swift */,
 				E121EA8223A133C600D8E958 /* SceneDelegate.swift */,
 				E121EA8423A133C600D8E958 /* ViewController.swift */,
+				E121EA9423A1341D00D8E958 /* BezierCurveView.swift */,
 				E121EA8623A133C600D8E958 /* Main.storyboard */,
 				E121EA8923A133C900D8E958 /* Assets.xcassets */,
 				E121EA8B23A133C900D8E958 /* LaunchScreen.storyboard */,
 				E121EA8E23A133C900D8E958 /* Info.plist */,
+				E121EA7E23A133C600D8E958 /* Products */,
 			);
 			path = Bezier;
 			sourceTree = "<group>";
@@ -139,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E121EA8523A133C600D8E958 /* ViewController.swift in Sources */,
+				E121EA9523A1341D00D8E958 /* BezierCurveView.swift in Sources */,
 				E121EA8123A133C600D8E958 /* AppDelegate.swift in Sources */,
 				E121EA8323A133C600D8E958 /* SceneDelegate.swift in Sources */,
 			);
